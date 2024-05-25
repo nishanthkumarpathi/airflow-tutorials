@@ -1,32 +1,12 @@
-# Airflow Tutorials
+# ## Understand this repository Structure
 
-## Setup Guide
+## Important files & folders to run Airflow
 
-### Docker Compose File
+* tutorials folder : is created by nishanth, its not part of the airflow setup.
 
-Copy or Download the `docker-compose.yml` file from the airflow documenation.
+* `docker-compose.yml` file
+* Folders to be created ( automatically created by docker-compose )
+    * dags
+    * logs folder
+    * plugins folder
 
-### Create a `.env` file
-
-Create a `.env` file in the same directory as the `docker-compose.yml` file. Add the following environment variables to the `.env` file.
-
-```bash
-AIRFLOW_IMAGE_NAME=apache/airflow:2.4.2
-AIRFLOW_UID=50000
-```
-
-### Start the Airflow Services
-
-Run the following command to start the Airflow services.
-
-```bash
-docker-compose up -d
-```
-
-### Added Airflow Pre-requisites Folders
-
-Only do this step, if the airflow services are not running, due to the folders not being created.
-
-- dags
-- plugins
-- logs
