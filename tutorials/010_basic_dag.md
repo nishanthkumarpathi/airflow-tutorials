@@ -1,12 +1,12 @@
 # Basic Dag
 
-### Learning Objective:
+## Learning Objective:
 
 - Create a DAG object following best practices
 - Define when to trigger your DAG
 - Give a unique name to your DAG to identify it on the UI
 
-### Simple Airflow DAG
+## Instructions: Simple Airflow DAG
 
 Write a simple Airflow DAG with no tasks and dependencies that must:
 
@@ -16,7 +16,7 @@ Write a simple Airflow DAG with no tasks and dependencies that must:
 - Run every day at midnight using a cron preset
 - Have catchup=False as we don't want to backfill missed runs (yet). You will see that later in the course.
 
-### Steps
+## Steps
 
 Step 1: Create a new Python file in the dags folder named user_processing.py
 
