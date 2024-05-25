@@ -23,7 +23,13 @@ Within your existing DAG user_processing, add your second task to check if the A
 
 ## Steps
 
-### Step 1: Add the API Connection
+### Step 1: Create a new Connection in the Airflow UI
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+
+### Step 2: Add the API Connection
 
 ```python
 from airflow.providers.http.sensors.http import HttpSensor
